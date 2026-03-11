@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: zim-rss-scraper
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 1
+    envVars:
+      - key: ARTICLES_PER_FEED
+        value: "5"
+    healthCheckPath: /
