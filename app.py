@@ -44,8 +44,8 @@ RSS_FEEDS = [
     {"name": "ZimLive",      "url": "https://www.zimlive.com/feed/"},
 ]
 
-DEFAULT_ARTICLES_PER_FEED = int(os.environ.get("ARTICLES_PER_FEED", 5))
-MAX_ARTICLES_PER_FEED = 10
+DEFAULT_ARTICLES_PER_FEED = int(os.environ.get("ARTICLES_PER_FEED", 2))
+MAX_ARTICLES_PER_FEED = 3
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
