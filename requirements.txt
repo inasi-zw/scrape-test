@@ -1,0 +1,8 @@
+flask
+requests
+beautifulsoup4
+lxml
+feedparser
+cloudscraper
+urllib3
+gunicorn
